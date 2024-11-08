@@ -336,13 +336,29 @@ main{
     color: var(--text-color-white);
     font-weight: var(--font-lighter);
     font-size: .9rem;
+    text-align: center;
     font-family: var(--font-family-poppins);
     padding:12px 16px;
     border-radius: 05px;
 }
-.menu-button {
+.menu-panel {
     display: none;
 }
+
+
+.dk_menu {
+    position: relative;
+    top: 1.2rem;
+    display: none;
+    left: 75.2%;
+}
+
+.dk_menu-icon {
+    font-size: 30px;
+    font-weight: var(--font-bold);
+    cursor: pointer;
+}
+
 
 /*Header BreakPoints*/
 
@@ -381,30 +397,89 @@ main{
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .menu-button {
-        display: block;
+@media screen and (max-width: 1023px) {
+    .dk_menu {
+        display: block;   
     }
+
+   .nav_menus {
+    position: absolute;
+    right: -75.3%;
+    display: flex;
+    width: max-content;
+   }
+   
+    .menu-panel {
+        display: flex;
+        margin-top: .5rem;
+        position: relative;
+    }
+
+    .menu_text {
+        font-family: var(--font-family-poppins);
+        font-size: 1.5rem;
+        font-weight: var(--font-light);
+    }
+
+    .menu-icon-close {
+        font-size: 30px;
+        font-weight: var(--font-bold);
+        cursor: pointer;
+    }
+
 
     .navbar {
         position: absolute;
+        display: none;
         background-color: rgb(242, 242, 242);
         height: 100vh;
-        width: 30%;
+        width: 40%;
         margin-top: 5rem;
-        max-width: 400px;
-        padding: 0;
-        /* top:59px;
-        left: 949px; */
-        /* right: 20%; */
+        max-width: 350px;
+        padding: 2% 2%;
+        top:-118%;
+        right: 0%;
+        z-index: 100;
+    }
+
+    .navbar.open {
+        display: block;
+    }
+
+    .dk_menu-icon,
+    .menu-icon-close {
+     position: absolute;
+     width: max-content;
+     height: max-content;
+    }
+
+    .menu-icon-close {
+        display: none;
+    }
+
+    .menu-icon-close.show {
+      display: block;
+      z-index: 100;
     }
 
     .nav-colections {
         flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 2rem;
     }
 
     .navlist_left {
         flex-direction: column;
+    }
+
+    .nav-right{
+        justify-content: center;
+        align-items: center;
+        transform: translateX(0) translateY(0);
+    }
+    .navitemnd_right {
+        display: flex;
+        gap: 1rem;
     }
 
     .mobile_login {
@@ -414,19 +489,44 @@ main{
         font-weight: var(--font-lighter);
         font-size: .9rem;
         font-family: var(--font-family-poppins);
-        padding:12px 16px;
+        padding:9px 16px;
         border-radius: 05px;
+        min-width:150px;
+        text-align: center;
     }
 
-   
+   .get_started {
+    min-width: 150px;
+    padding:9px 16px;
+   }
 
     .top_cities_menu, .more-drop,.rm-login {
         display: none;
     }
+
+    .tools-dropdown:hover .tools_dropdown_menu,
+    .sitter-job:hover .get_housesitterjob_dropdown_menu, 
+    .find_housesitters:hover .find_housesitter_dropdown{
+        pointer-events: initial;
+       visibility: initial;
+       opacity:0;
+   }
+
+   .sitter_job_hover {
+    border-bottom: none !important;
+   }
+
+   .navlink_left:hover,
+    .navlink_right:hover,
+    .menus_hover:hover {
+    color: var(--text-color-black) !important;
+}
+
 }
 
 @media screen and (min-width:1024px) {
-    .mobile_login {
+    .mobile_login
+     {
         display: none;
     }
 }

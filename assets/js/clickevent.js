@@ -27,3 +27,35 @@ const navbarHoverEffect = () => {
 };
 
 navbarHoverEffect();
+
+
+// Screen NavBar
+
+const NavbarFunction = (openEle, closeEle, menu) => {
+    const openButton = document.querySelector(openEle);
+    const closeButton = document.querySelector(closeEle);
+    const menuElement = document.querySelector(menu);
+
+    openButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        menuElement.classList.add("open");
+        closeButton.classList.add("show");
+    });
+
+    closeButton.addEventListener('click', (eve) => {
+        eve.stopPropagation();
+
+        menuElement.classList.remove("open");
+        closeButton.classList.remove("show");
+    });
+
+    document.addEventListener('click',(e) => {
+        if(!menuElement.contains(e.target) && !openButton.contains(e.target)){
+            menuElement.classList.remove("open");
+            closeButton.classList.remove("show");
+        }
+    });
+};
+
+NavbarFunction('.dk_menu-icon', '.menu-icon-close', '.navbar');
