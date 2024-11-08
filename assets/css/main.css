@@ -408,7 +408,7 @@ main{
     display: flex;
     width: max-content;
    }
-   
+
     .menu-panel {
         display: flex;
         margin-top: .5rem;
@@ -522,6 +522,105 @@ main{
     color: var(--text-color-black) !important;
 }
 
+}
+
+
+@media screen and (max-width:980px) { 
+    .dk_menu{
+        left: 72%;
+    }
+}
+
+@media screen and (max-width:870px) { 
+    .dk_menu{
+        left: 70%;
+    }
+    
+  
+    
+    .mobile_login, .get_started {
+        padding: 7px 12px;
+        min-width:120px;
+    }
+}
+
+@media screen and (max-width:780px) { 
+    .dk_menu{
+        left: 68%;
+    }
+}
+
+@media screen and (max-width:730px) { 
+    .dk_menu{
+        left: 65%;
+    }
+    .navbar {
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width:680px) { 
+    .dk_menu{
+        left: 50%;
+    }
+    .navbar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) { 
+    .dk_menu{
+        left: 53%;
+    }
+    .navbar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:560px) { 
+    .dk_menu{
+        left: 50%;
+    }
+    .navbar {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:512px) { 
+    .dk_menu{
+        left: 47%;
+    }
+    .navbar {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:480px) { 
+    .dk_menu{
+        left: 40%;
+    }
+    .navbar {
+        width: 72%;
+    }
+}
+
+@media screen and (max-width:400px) { 
+    .dk_menu{
+        left: 30%;
+    }
+    .navbar {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:370px) { 
+    .dk_menu{
+        left: 27%;
+    }
+    .navbar {
+        width: 85%;
+    }
 }
 
 @media screen and (min-width:1024px) {
