@@ -41,9 +41,14 @@ a {
 main{
     max-width: 1400px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+section {
+    width: 100%;
 }
 
 
@@ -676,6 +681,8 @@ main{
     color: var(--text-color-white);
 }
 
+
+
 .hero_link1:hover {
     background-color: #03a3a3;
 }
@@ -826,4 +833,171 @@ main{
 
 @media screen and (min-width:990px){ 
     section {padding: 0;}
+}
+
+
+/* Offer_Style */
+
+
+.offer {
+    margin-top: 4rem;
+}
+.divider {
+    background-color: var(--main-color);
+    height: 4px;
+    width: 64px;
+    justify-self: center;
+}
+
+.offer_container {
+    font-family: var(--font-family-poppins);
+    margin-top: 3rem;
+}
+.offer_title {
+    text-align: center;
+    font-weight: var(--font-light);
+}
+.offer_content,
+.offer_numbering{
+    display: flex;
+}
+
+.offer_right,
+.each_offer {
+    display: grid;
+    
+}
+
+.offer_number {
+    display: flex;
+    border: 1px solid var(--text-color-black);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    width: 2rem;
+    height: 2rem;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.offer_no {
+    font-weight: var(--font-bolder);
+    font-size: 15px;
+    text-align: center;
+}
+.find_sitter_offer {
+    display: flex;
+    justify-content: center;
+}
+
+.find_sitter_offer a {
+    padding: 12px 16px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color-white);
+    
+}
+
+/* Offer Breakpoints */
+
+@media screen and (max-width:380px){
+
+    .offer_title {
+        font-size: 1.5rem;
+
+    }
+    .offer_content {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+        padding :0 3%;
+    }
+    .offer_left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offer_left img {
+        width: 80%;
+        height: 200px;
+    }
+
+    .offer_right {
+        gap: 2rem;
+    }
+    .offer_right_body {
+        display: grid;
+        gap: 2rem;
+    }
+    .each_offer {
+        gap: .5rem;
+    }
+
+    .offer_numbering {
+        gap: .9rem;
+    }
+
+    .offer_info {
+        font-size: 1.3rem;
+        font-weight: var(--font-light);
+    }
+
+    .find_sitter_offer a {
+        width: 95%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+} 
+
+@media  screen and (min-width: 380px) {
+    .offer_title {
+        font-size: 1.5rem;
+
+    }
+    .offer_content {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+        padding :0 3%;
+    }
+    .offer_left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offer_left img {
+        width: 80%;
+        height: 200px;
+    }
+
+    .offer_right {
+        gap: 2rem;
+    }
+    .offer_right_body {
+        display: grid;
+        gap: 2rem;
+    }
+    .each_offer {
+        gap: .5rem;
+    }
+
+    .offer_numbering {
+        gap: .9rem;
+    }
+
+    .offer_info {
+        font-size: 1.3rem;
+        font-weight: var(--font-light);
+    }
+
+    .find_sitter_offer a {
+        width: 95%;
+        text-align: center;
+        font-size: 15px;
+    }
 }
