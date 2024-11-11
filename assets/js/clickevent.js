@@ -18,7 +18,7 @@ const navbarHoverEffect = () => {
      const topCities_drop = document.querySelector('.dropdown_body_top_cities');
      const topCities = document.querySelector('.top_cities_hover');
         
-     topCities_drop.addEventListener('mouseenter', () => {
+     topCities_drop.addEventListener('mouseenter', () => {  
             topCities.style.borderBottom = "3px solid var(--main-color)";
         });      
      topCities_drop.addEventListener('mouseleave', () => {
