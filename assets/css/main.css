@@ -842,12 +842,17 @@ section {
 .offer {
     margin-top: 4rem;
 }
+.divider_container {
+    display: flex;
+    justify-content: center;
+}
 .divider {
     background-color: var(--main-color);
     height: 4px;
     width: 64px;
-    justify-self: center;
+  
 }
+
 
 .offer_container {
     font-family: var(--font-family-poppins);
@@ -907,6 +912,11 @@ section {
     .offer_title {
         font-size: 1.5rem;
 
+    }
+
+    .offer_info_subtitle {
+        font-size: .8rem;
+        font-weight: var(--font-lighter);
     }
     .offer_content {
         flex-direction: column;
@@ -1025,5 +1035,29 @@ section {
     .offer_info {
         font-size: 1.2rem;
     }
+
+    .offer_info_subtitle {
+        font-size: 1rem;
+        font-weight: var(--font-lighter);
+    }
     
+}
+
+@media screen and (min-width: 767px){
+
+    .offer_title {
+        font-size: 1.6rem;
+    }
+    .offer_content {
+        flex-direction: row;
+    }
+
+    .offer_left img {
+        width: 100%
+    }
+    .find_sitter_offer a {
+        width:auto;
+        
+        font-size: 16px;
+    }
 }
