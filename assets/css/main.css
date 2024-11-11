@@ -954,7 +954,7 @@ section {
 } 
 
 @media  screen and (min-width: 380px) {
-    .offer_title {
+      .offer_title {
         font-size: 1.5rem;
 
     }
@@ -968,11 +968,13 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 
     .offer_left img {
-        width: 80%;
-        height: 200px;
+        width: 90%;
+        text-align: center;
+        
     }
 
     .offer_right {
@@ -1000,4 +1002,28 @@ section {
         text-align: center;
         font-size: 15px;
     }
+}
+
+@media screen and (min-width: 480px){
+
+    .offer_left img{
+        width: 70%;
+    }
+
+    .offer_info {
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (min-width: 600px){
+
+    .offer_left img{
+        width: 55%;
+    }
+
+    .offer_info {
+        font-size: 1.2rem;
+    }
+    
 }
