@@ -846,6 +846,7 @@ section {
     display: flex;
     justify-content: center;
 }
+
 .divider {
     background-color: var(--main-color);
     height: 4px;
@@ -1050,6 +1051,7 @@ section {
     }
     .offer_content {
         flex-direction: row;
+        gap: 2rem;
     }
 
     .offer_left img {
@@ -1057,7 +1059,25 @@ section {
     }
     .find_sitter_offer a {
         width:auto;
-        
+        height: auto;
         font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 987px){
+    .offer_title {
+        font-size: 2rem;
+    }
+    .offer_left img {
+        width: 100%
+    }
+}
+@media screen and (min-width: 1100px){
+    .offer_left img {
+        width: 90%
+    }
+
+    .offer_info_subtitle {
+        font-size: .9rem;
     }
 }
