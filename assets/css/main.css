@@ -16,7 +16,8 @@
   --font-boldest: 700;
   --font-family-poppins: "Poppins", "sans-serif";
 }
-I * {
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
